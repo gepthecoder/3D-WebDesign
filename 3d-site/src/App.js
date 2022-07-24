@@ -65,6 +65,26 @@ const Wrapper = styled.div`
     margin: 0;
     top: 0;
     right: 0;
+
+    @media (max-width: 1024px) {
+      transition: 1s;
+      transform: scale(0.8) translateX(200px);
+    }
+    @media (max-width: 800px) {
+      transition: 1s;
+      transform: scale(0.7) translateX(600px);
+    }
+    @media (max-width: 600px) {
+      transition: 1s;
+      transform: scale(0.5) translateX(-100px);
+      right: auto;
+      left: 50%;
+      margin-left: -600px;
+    }
+    @media (max-width: 375px) {
+      transition: 1s;
+      transform: scale(0.45) translateX(-50px);
+    }
   }
 `;
 
