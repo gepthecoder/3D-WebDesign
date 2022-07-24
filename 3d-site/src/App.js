@@ -45,6 +45,11 @@ function App() {
           <img src={Laptop} alt="Download"></img> Download For Windows
         </button>
       </Content>
+      <Social>
+        <div />
+        <img src={Twitter} alt="Twitter"></img>
+        <img src={Youtube} alt="Youtube"></img>
+      </Social>
     </Wrapper>
   );
 }
@@ -142,6 +147,28 @@ const Menu = styled.ul`
 
   li {
     margin: 0 0 0 100px;
+  }
+`;
+
+const Social = styled.div`
+  position: absolute;
+  top: 150px;
+  left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+
+  div {
+    width: 1px;
+    height: 500px;
+    background: linear-gradient(
+      180deg,
+      #08b6f9 0%,
+      #6c56ef 33%,
+      #1306dd 65%,
+      #aa0eb2 100%
+    );
   }
 `;
 
