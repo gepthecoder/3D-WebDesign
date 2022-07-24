@@ -95,7 +95,7 @@ const Wrapper = styled.div`
 const Content = styled.div`
   position: absolute;
   top: 30px;
-  width: 100%;
+  width: fit-content;
 
   display: flex;
   flex-direction: column;
