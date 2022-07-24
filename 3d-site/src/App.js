@@ -59,6 +59,9 @@ const Wrapper = styled.div`
   font-size: 16px;
   color: white;
   position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
 
   .spline {
     position: absolute;
@@ -91,6 +94,7 @@ const Wrapper = styled.div`
 const Content = styled.div`
   position: absolute;
   top: 30px;
+  width: 100%;
 
   display: flex;
   flex-direction: column;
@@ -157,6 +161,11 @@ const Content = styled.div`
   p,
   button {
     margin: 0 30px 0 100px;
+
+    @media (max-width: 1024px) {
+      transition: 1s;
+      margin: 0 30px;
+    }
   }
 `;
 
@@ -166,6 +175,12 @@ const Menu = styled.ul`
   align-items: center;
   marign: 0 30px 0 100px;
   padding: 0;
+  margin-left: 100px;
+
+  @media (max-width: 1024px) {
+    transition: 1s;
+    margin: 0 30px;
+  }
 
   li {
     list-style: none;
@@ -185,8 +200,15 @@ const Menu = styled.ul`
     }
   }
 
-  li {
-    margin: 0 0 0 100px;
+  @media (max-width: 800px) {
+    transition: 1s;
+    justify-content: space-between;
+    li: nth-child(2),
+    li: nth-child(3),
+    li: nth-child(4),
+    li: nth-child(5) {
+      display: none;
+    },
   }
 `;
 
@@ -209,6 +231,11 @@ const Social = styled.div`
       #1306dd 65%,
       #aa0eb2 100%
     );
+  }
+
+  @media (max-width: 1024px) {
+    transition: 1s;
+    display: none;
   }
 `;
 
