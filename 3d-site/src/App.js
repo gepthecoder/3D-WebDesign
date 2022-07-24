@@ -72,6 +72,7 @@ const Wrapper = styled.div`
     @media (max-width: 1024px) {
       transition: 1s;
       transform: scale(0.8) translateX(200px);
+      transform-origin: top;
     }
     @media (max-width: 800px) {
       transition: 1s;
@@ -124,7 +125,7 @@ const Content = styled.div`
     }
     @media (max-width: 600px) {
       transition: 1s;
-      padding-top: 100px;
+      padding-top: 250px;
     }
   }
 
