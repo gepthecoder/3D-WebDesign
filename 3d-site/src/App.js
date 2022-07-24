@@ -14,6 +14,26 @@ function App() {
         scene="https://prod.spline.design/TM-uvVIUVs3hNtQq/scene.splinecode"
       />
       <Content>
+        <Menu>
+          <li>
+            <img src={Logo} alt="Logo" />{" "}
+          </li>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/">Download</a>
+          </li>
+          <li>
+            <a href="/">App</a>
+          </li>
+          <li>
+            <a href="/">Login</a>
+          </li>
+          <li>
+            <button> Get Started </button>
+          </li>
+        </Menu>
         <h1>Collaborate with people</h1>
         <p>
           The essential factors of effective teams include psychological safety,
@@ -92,6 +112,36 @@ const Content = styled.div`
   p,
   button {
     margin: 0 30px 0 100px;
+  }
+`;
+
+const Menu = styled.ul`
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  marign: 0 30px 0 100px;
+  padding: 0;
+
+  li {
+    list-style: none;
+    marign: 0;
+
+    a {
+      text-decoration: none;
+      color: white;
+      padding: 8px 20px;
+      border: 1px solid rgba(255, 255, 255, 0);
+      transition: 1s;
+      border-radius: 14px;
+
+      :hover {
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+    }
+  }
+
+  li {
+    margin: 0 0 0 100px;
   }
 `;
 
